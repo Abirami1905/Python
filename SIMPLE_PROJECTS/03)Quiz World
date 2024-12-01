@@ -1,0 +1,53 @@
+print("Welcome to the world of challenges!")
+
+playing = input("Do you want to explore?")
+
+if playing.lower() != "yes":
+    quit()
+
+print("Okay! Let' explore :)")
+score = 0
+
+answer = input("What is the colour of the blood for grosshopper?")
+if answer.lower()== "white":
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+
+answer = input("Which animal has the smallest heart?")
+if answer.lower() == "lion":
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+answer = input("Where does white elephants located?")
+
+if answer.lower() == "thailand":
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+
+answer = input("where does Dr.A.P.J Abdul Kalam was born?")
+
+if answer.lower() == "rameshwaram":
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+
+answer = input("Who built the pragadheeshwarar temple located in tanjore?")
+
+if answer.lower() == "raja raja chozhan":
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+print("You got "+ str(score)+" questions correct!")
+print("You got "+ str((score/5)*100)+"%." )
